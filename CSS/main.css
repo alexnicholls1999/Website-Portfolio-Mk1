@@ -1,0 +1,70 @@
+/* Variables */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(Website-Portfolio-Mk1/C:\Users\Alex\Desktop\Website-Portfolio-Mk1\Helvetica-Regular.ttf) format("eot");
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica;
+  background: #FFF;
+  color: black;
+  line-height: 1.5;
+}
+
+#home {
+  min-height: 450px;
+  color: black;
+  text-align: center;
+}
+
+#home .bg-image {
+  position: absolute;
+  background: #333;
+}
+
+#home h1 {
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
+
+#home .content-wrap {
+  padding: 0 1.5em;
+}
+
+#about {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+}
+
+#about .content-wrap {
+  padding: 0 1.5em;
+  text-align: center;
+}
+
+#attributes {
+  padding: 10%;
+  text-align: center;
+}
+
+#attributes img {
+  width: auto;
+}
+
+.card-content {
+  padding: 1.5em;
+  text-align: center;
+}
+
+#blogs {
+  text-align: left;
+  padding: 10%;
+}
+
+#blogs img {
+  position: block;
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=main.css.map */

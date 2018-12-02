@@ -1,0 +1,76 @@
+/* Variables */
+@font-face {
+    font-family: "Helvetica Neue"; 
+    src: url(Website-Portfolio-Mk1/C:\Users\Alex\Desktop\Website-Portfolio-Mk1\Helvetica-Regular.ttf) format("eot"),
+
+}
+
+$font-main: Helvetica;
+$bg-main-color: #FFF;
+$default-color: black;
+
+body{
+    margin: 0;
+    font-family: $font-main;
+    background: #FFF;
+    color: $default-color;
+    line-height: 1.5;
+}
+
+#home {
+    min-height: 450px;
+    color: black;
+    text-align: center;
+
+    .bg-image {
+        position: absolute;
+        background: #333;
+    }
+
+    h1{
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+
+    .content-wrap{
+        padding: 0 1.5em;
+    }
+}
+
+#about {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+
+    .content-wrap{
+        padding: 0 1.5em;
+        text-align: center;
+    }
+}
+
+#attributes {
+    padding: 10%;
+    text-align: center;
+
+    img{
+        width: auto;
+    }
+}
+
+.card-content{
+    padding: 1.5em;
+    text-align: center;
+}
+
+
+
+#blogs {
+    text-align: left;
+    padding: 10%;
+
+    img{
+        position: block;
+        width: 100%;
+        height: auto;
+    }
+}
