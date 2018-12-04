@@ -1,13 +1,8 @@
 /* Variables */
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url(Website-Portfolio-Mk1/C:\Users\Alex\Desktop\Website-Portfolio-Mk1\Helvetica-Regular.ttf) format("eot");
-}
-
 body {
   margin: 0;
   font-family: Helvetica;
-  background: #FFF;
+  background: #FFFFFF;
   color: black;
   line-height: 1.5;
 }
@@ -32,8 +27,15 @@ body {
   padding: 0 1.5em;
 }
 
+#home btn {
+  padding: 10%;
+}
+
+#home h2 {
+  font-size: 1em;
+}
+
 #about {
-  background: #eaeaea;
   color: #333;
   padding-bottom: 2em;
 }
@@ -49,12 +51,43 @@ body {
 }
 
 #attributes img {
-  width: auto;
+  width: 50%;
+  height: auto;
 }
 
 .card-content {
   padding: 1.5em;
   text-align: center;
+}
+
+#skills ul {
+  display: inline;
+}
+
+#skills li {
+  list-style: none;
+}
+
+#skills .banner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  position: relative;
+}
+
+#skills img:nth-child(1) {
+  width: 100%;
+  background-image: url(".../Images/HTML.png");
+}
+
+#skills h2 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  text-align: left;
+  color: greenyellow;
 }
 
 #blogs {
@@ -66,5 +99,69 @@ body {
   position: block;
   width: 100%;
   height: auto;
+}
+
+#contact {
+  background-color: #F7F7F7;
+  text-align: center;
+}
+
+#contact .box {
+  padding: 10%;
+  font-family: Helvetica;
+}
+
+#contact ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 0.5fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+  list-style: none;
+  text-align: center;
+}
+
+#contact li {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1 / 5;
+  position: solid;
+  font-size: 3em;
+}
+
+#contact .box:nth-child(2) {
+  background-color: #DDDDDD;
+  padding: 10%;
+}
+
+#contact form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1f 1f;
+      grid-template-columns: 1f 1f;
+  grid-row-gap: 2%;
+  padding-bottom: 25px;
+}
+
+#contact label {
+  text-align: left;
+  font-weight: bold;
+  padding: 1px;
+}
+
+#contact input[type=text] {
+  padding: 10px;
+  border: none;
+}
+
+#contact textarea {
+  border: none;
+  resize: none;
+}
+
+#main-footer {
+  background-color: #707070;
+  text-align: center;
+  padding: 10%;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
