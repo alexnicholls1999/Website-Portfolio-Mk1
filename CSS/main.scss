@@ -1,18 +1,18 @@
 /* Variables */
-@font-face {
-    font-family: "Helvetica Neue"; 
-    src: url(Website-Portfolio-Mk1/C:\Users\Alex\Desktop\Website-Portfolio-Mk1\Helvetica-Regular.ttf) format("eot"),
-
-}
-
 $font-main: Helvetica;
-$bg-main-color: #FFF;
 $default-color: black;
+
+$bg-main-color: #FFFFFF;
+$bg-contact-color: #DDDDDD; 
+$bg-social-media-color: #F7F7F7; 
+$bg-footer-color: #707070;
+
+
 
 body{
     margin: 0;
     font-family: $font-main;
-    background: #FFF;
+    background: $bg-main-color;
     color: $default-color;
     line-height: 1.5;
 }
@@ -35,10 +35,17 @@ body{
     .content-wrap{
         padding: 0 1.5em;
     }
+
+    btn {
+        padding: 10%;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
 }
 
 #about {
-    background: #eaeaea;
     color: #333;
     padding-bottom: 2em;
 
@@ -53,8 +60,10 @@ body{
     text-align: center;
 
     img{
-        width: auto;
+        width: 50%;
+        height: auto;
     }
+
 }
 
 .card-content{
@@ -62,7 +71,30 @@ body{
     text-align: center;
 }
 
+#skills {
+    ul {
+        display: inline;
+    }
 
+    li {
+        list-style: none;
+    }
+
+        .banner {
+            display: grid;
+            grid-template-rows: 1fr;
+        }
+
+            img {
+                width: 100%;
+                grid-row: 1;
+            }
+
+            h2 {
+                text-align: left;
+                color: greenyellow;
+            }
+    }
 
 #blogs {
     text-align: left;
@@ -73,4 +105,40 @@ body{
         width: 100%;
         height: auto;
     }
+}
+
+#contact {
+    background-color: $bg-social-media-color;
+    text-align: center;
+    
+    .box {
+        padding: 10%;
+        font-family: $font-main;
+    }
+
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+            list-style: none;
+            text-align: center;
+        }
+
+        li {
+            grid-row: 1 / 5;
+            position: solid;
+            font-size: 3em;
+        }
+
+    .box:nth-child(2) {
+        background-color: $bg-contact-color;
+        padding: 10%;
+    }
+
+    
+}
+#main-footer {
+    background-color: $bg-footer-color;
+    text-align: center;
+    padding: 10%;
+    color: white;
 }
