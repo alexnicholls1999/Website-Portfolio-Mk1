@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Website Portfolio</title>
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
     
     <!-- Home Page -->
     <header id="home" class="grid">
-        <div id="particles-js"><script src="particles.js"></script></div>
         <h1>Welcome</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, provident?</p>
-        <a href="#" class="btn"></a>
+        <a href="#about" class="btn"><img src="Images/Picture1.png"></a>
+        <h2>Scroll</h2>
     </header>
 
     <!-- About Page -->
@@ -52,9 +53,15 @@
     </section>
 
     <section id="skills" class="grid">
-            <div class="content-wrap">
-            </div>
-            
+            <div class="content-wrap"></div>
+            <ul>
+                    <li> 
+                        <div class="banner">
+                                <img src="Images/HTML.png" alt="">
+                                <h2>HTML</h2>
+                        </div>
+                    </li>
+            </ul>          
     </section>
 
     <section id="projects" class="grid">
@@ -91,33 +98,22 @@
         <div class="box">
             <h2 class="content-title">Social Media</h2>
             <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/alex-zietára-nicholls-19ba33172/"><img src="" alt=""></a>
-                </li>
-
-                <li>
-                        <a href="https://github.com/alexnicholls1999"><img src="" alt=""></a>
-                </li>
-
-                <li>
-                        <a href="https://www.instagram.com/alex_zietaranicholls/"><img src="" alt=""></a>
-                </li>
-                
-                <li>
-                            <a href="https://codepen.io/alex-william-ziet-ra-nicholls/#"><img src="" alt=""></a>
-                </li>
+                <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/alex-zietára-nicholls-19ba33172/"></a></i></li>
+                <li><i class="fab fa-github"></i><a href="https://github.com/alexnicholls1999"></a></li>
+                <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/alex_zietaranicholls/"></a></li>
+                <li><i class="fab fa-codepen"></i><a href="https://codepen.io/alex-william-ziet-ra-nicholls/#"></a></li>
             </ul> 
         </div>
         <div class="box">
                 <h2 class="content-title">Message Me</h2>
                 <form action="">
-                    <label for="fname">First Name: </label>
-                    <input type="text" name="firstname" id="fname">
+                    <label for="fname">Name* </label>
+                    <input type="text" name="name" id="name">
 
-                    <label for="lname">Last Name: </label>
-                    <input type="text" name="lastname" id="lname">
+                    <label for="lname">Email* </label>
+                    <input type="text" name="email" id="email">
 
-                    <label for="message">Message</label>
+                    <label for="message">Message*</label>
                     <textarea name="msgbox" id="message" cols="30" rows="10"></textarea>
                 </form>
         </div>
