@@ -7,7 +7,9 @@ $bg-contact-color: #DDDDDD;
 $bg-social-media-color: #F7F7F7; 
 $bg-footer-color: #707070;
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
@@ -17,37 +19,67 @@ body{
     line-height: 1.5;
 }
 
+.navbar {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    background: white;
+
+        #nav-wrap li{    
+            display: inline-block;
+
+            img{
+                width: 50%;
+            }
+
+            img:nth-child(2) {
+                width: 25%;
+            }
+        }
+}
+
+
 #home {
-    min-height: 450px;
+    height: 100vh;
     color: black;
     text-align: center;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    background: url('../Images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 
-    .bg-image {
-        position: absolute;
-        background: #333;
+    .nav{
+        position: top;
     }
 
     h1{
-        padding-top: 100px;
-        padding-bottom: 0px;
+        margin-top: 10vh;
+        color: white;
     }
-
+    a {
+        
+    }
+    p {
+        color: white;
+    }
     .content-wrap{
         padding: 0 1.5em;
     }
 
-    btn {
-        padding: 10%;
+    img {
+        margin-top: 30vh;
     }
 
     h2 {
         font-size: 1em;
-    }
+        color: #FFFFFF;
+    }    
 }
 
 #about {
     color: #333;
-    padding-bottom: 2em;
+    padding: 5em;
 
     .content-wrap{
         padding: 0 1.5em;
@@ -72,33 +104,15 @@ body{
 }
 
 #skills {
-    ul {
-        display: inline;
-    }
+    padding: 0;
 
-    li {
-        list-style: none;
-    }
-
-        .banner {
-            display: grid;
-            grid-template-rows: 1fr;                
-            grid-template-columns: 1fr;
-            position: relative;
+        img{
+            width: 100%;
         }
-
-            img:nth-child(1) {
-                width: 100%;
-                background-image: url(".../Images/HTML.png")                 
-            }
-
-            h2 {
-                grid-row: 1;            
-                text-align: left;
-                color: greenyellow;
-            }
-    }
-
+}
+#projects {
+    padding: 10%;
+}
 #blogs {
     text-align: left;
     padding: 10%;
@@ -140,8 +154,8 @@ body{
     form {
         display: grid;
         grid-template-columns: 1f 1f;
-        grid-row-gap: 2%; 
-        padding-bottom: 25px;
+        grid-row-gap: 2%;
+        padding-bottom: 1%;
     }
 
         label {

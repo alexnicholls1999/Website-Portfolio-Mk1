@@ -1,4 +1,8 @@
 /* Variables */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Helvetica;
@@ -7,37 +11,65 @@ body {
   line-height: 1.5;
 }
 
-#home {
-  min-height: 450px;
-  color: black;
-  text-align: center;
+.navbar {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  background: white;
 }
 
-#home .bg-image {
-  position: absolute;
-  background: #333;
+.navbar #nav-wrap li {
+  display: inline-block;
+}
+
+.navbar #nav-wrap li img {
+  width: 50%;
+}
+
+.navbar #nav-wrap li img:nth-child(2) {
+  width: 25%;
+}
+
+#home {
+  height: 100vh;
+  color: black;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 0px;
+  background: url("../Images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home .nav {
+  position: top;
 }
 
 #home h1 {
-  padding-top: 100px;
-  padding-bottom: 0px;
+  margin-top: 10vh;
+  color: white;
+}
+
+#home p {
+  color: white;
 }
 
 #home .content-wrap {
   padding: 0 1.5em;
 }
 
-#home btn {
-  padding: 10%;
+#home img {
+  margin-top: 30vh;
 }
 
 #home h2 {
   font-size: 1em;
+  color: #FFFFFF;
 }
 
 #about {
   color: #333;
-  padding-bottom: 2em;
+  padding: 5em;
 }
 
 #about .content-wrap {
@@ -60,34 +92,16 @@ body {
   text-align: center;
 }
 
-#skills ul {
-  display: inline;
+#skills {
+  padding: 0;
 }
 
-#skills li {
-  list-style: none;
-}
-
-#skills .banner {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  position: relative;
-}
-
-#skills img:nth-child(1) {
+#skills img {
   width: 100%;
-  background-image: url(".../Images/HTML.png");
 }
 
-#skills h2 {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  text-align: left;
-  color: greenyellow;
+#projects {
+  padding: 10%;
 }
 
 #blogs {
@@ -139,7 +153,7 @@ body {
   -ms-grid-columns: 1f 1f;
       grid-template-columns: 1f 1f;
   grid-row-gap: 2%;
-  padding-bottom: 25px;
+  padding-bottom: 1%;
 }
 
 #contact label {
