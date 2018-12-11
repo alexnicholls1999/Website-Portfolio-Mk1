@@ -1,130 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Website Portfolio</title>
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <title>Website Portfolio</title>
 </head>
 <body>
-    
-    <div class="navbar">
-        <div id="nav-wrap" class="grid">
+        <!-- Navigation Menu -->
+          <nav>
+                  <div id="logo"><img src="Images/logo.png" alt="logo"></div>
+                  <a href="#" id="menu"><img src="Images/hamburger-menu.png" alt="menu"></a>
+          </nav>
+        <!-- Home Page -->
+          <header id="home" class="grid">
+                <div class="content-wrap">
+                        <h1>Welcome</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestias eligendi reiciendis eos ex ullam fugiat repellendus tempore ratione debitis! </p>
+                </div>
+        
+                <a href="#about" class="btn"><img src="Images/scroll.png" alt="scroll"><p>Scroll</p></a>
+
+        </header>
+
+        <!-- About Page -->
+        <section id="about" class="grid">
+                <h2>About</h2>
+                <img src="Images/profile.JPG" alt="profile picture">
+                <h3>Who Am I</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, ex.</p>
+        </section>
+
+        <!-- Attributes Page -->
+        <section id="attributes" class="grid">
+                <h2>Attributes</h2>
                 <ul>
-                        <li><img src="Images/logo.png" id="logo" alt="logo"></li>
-                        <li><h2>Home.</h2></li>
-                        <li><img src="Images/hamburger-menu.png" alt="" srcset=""></li>
-                </ul>      
-        </div>             
-    </div>
+                        <li>
+                                <div class="card">
+                                        <img src="Images/UX_UI image.png" alt="UX and UI">
+                                        <h2>UX and UI Design</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
+                                </div>
+                        </li>
+                        <li>
+                                <div class="card">
+                                        <img src="Images/Front_End.png" alt="Front_End">
+                                        <h2>Front End Developer</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
+                                </div>
+                        </li>
+                        <li>
+                                <div class="card">
+                                        <img src="Images/Back_End.png" alt="Front_End">
+                                        <h2>Back End Developer</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
+                                </div>
+                        </li>
+                </ul>
+        </section>
 
-    <!-- Home Page -->
-    <header id="home" class="grid">
-        <h1>Welcome</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, provident?</p>
-        <a href="#about" class="btn"><img src="Images/scroll.png"></a>
-        <h2>Scroll</h2>
-    </header>
+        <!-- Skills -->
+        <section id="skills" class="grid">
+                <h2>Skills</h2>
+                <ul>
+                     <li>
+                          <div class="banner">
+                                  <img src="Images/HTML.png" alt="UX and UI">
+                                  <h3>HTML</h3>
+                          </div>
+                     </li>
+                     <li>
+                          <div class="banner">
+                                  <img src="Images/CSS.png" alt="UX and UI">
+                                  <h3>CSS</h3>
+                          </div>                                    
+                     </li>
+                     <li>
+                          <div class="banner">
+                                  <img src="Images/JS.png" alt="UX and UI">
+                                  <h3>JS</h3>
+                          </div>                                    
+                     </li>
+                     <li>
+                          <div class="banner">
+                                  <img src="Images/Python.png" alt="UX and UI">
+                                  <h3>PYTHON</h3>
+                          </div>                                    
+                     </li>
+                     <li>
+                          <div class="banner">
+                                  <img src="Images/Git.png" alt="UX and UI">
+                                  <h3>GIT</h3>
+                          </div>                                    
+                     </li>
+                     <li>
+                          <div class="banner">
+                                  <img src="Images/React.png" alt="UX and UI">
+                                  <h3>REACT</h3>
+                          </div>                                    
+                     </li>
+                     <li>
+                             <div class="banner">
+                                     <img src="Images/Vue.png" alt="Vue">
+                                     <h3>VUE</h3>
+                             </div>
+                     </li>
+                     <li>
+                             <div class="banner">
+                                     <img src="Images/Sketch.png" alt="Sketch" >
+                                     <h3>SKETCH</h3>
+                             </div>
+                     </li>
+                     <li>
+                             <div class="banner">
+                                     <img src="Images/XD.png" alt="Sketch" >
+                                     <h3>XD</h3>
+                             </div>
+                     </li>
+                     <li>
+                                <div class="banner">
+                                     <img src="Images/Photoshop.png" alt="Sketch" >
+                                     <h3>PHOTOSHOP</h3>
+                                </div>
+                     </li>                     
+                </ul>
+        </section>
 
-    <!-- About Page -->
-    <section id="about" class="grid">
-        <div class="content-wrap">
-            <img src="#" alt="Bio Picture">
-            <h2>Who Am I?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolorum!</p>
-        </div>
-    </section>
+        <!-- Projects Page -->
+        <section id="Projects" class="grid">
+                <h2>Projects</h2>
+                <img src="Images/gutenburg.png" alt="">
+                <img src="Images/solent_pizzas.png" alt="">
+                <img src="Images/webco.png" alt="">
+        </section>        
 
-    <!--Attributes Page -->
-    <section id="attributes" class="grid">
-            <div class="card">
-                <div class="card-content">
-                        <img src="Images/UX_UI image.png" alt="">
-                        <h2>UX and UI Design. </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, alias?</p>
+        <!-- Blogs Page -->
+        <section id="blogs" class="grid">
+                <h2>Blogs</h2>
+
+                <ul>
+                     <li>
+                             <div class="card">
+                                     <img src="Images/Modern Design.png" alt="UX and UI">
+                                     <h2>THE ORIGINS OF MODERN DESIGN</h2>
+                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
+                             </div>
+                     </li>
+                     <li>
+                             <div class="card">
+                                     <img src="Images/Websites.png" alt="Front_End">
+                                     <h2>The background of websites and its guidelines</h2>
+                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
+                             </div>
+                     </li>
+                     <li>
+                             <div class="card">
+                                     <img src="Images/Global Village.png" alt="Front_End">
+                                     <h2>The Global Village</h2>
+                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
+                             </div>
+                     </li>
+                </ul>
+        </section>
+        
+        <!-- Contact Page -->
+        <section id="contact" class="grid">
+                <div class="box">
+                  <h2 class="content-title">Social Media</h2>
+                  <ul>
+                          <li><i class="fab fa-linkedin-in"></i><a href=""></a></li>
+                          <li><i class="fab fa-github"></i><a href=""></a></li>
+                          <li><i class="fab fa-instagram"><a href=""></a></i></li>
+                          <li><i class="fab fa-codepen"><a href=""></a></i></li>
+                  </ul>
                 </div>
-            </div>    
-            <div class="card">
-                <div class="card-content">
-                        <img src="Images/Front_End.png" alt="">
-                        <h2>Front End Developer. </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, alias?</p>
+
+                <div class="box">
+                        <h2 class="content-title">Message Me</h2>
+                        <form action="">
+                                <div class="form-wrap">
+                                     <label for="name">Name*</label>
+                                     <input type="text" name="name" id="name">
+                                </div>
+                                
+                                <div class="form-wrap">
+                                     <label for="email">Email*</label>
+                                     <input type="text" name="email" id="email">
+                                </div>
+
+                                <div class="form-wrap">
+                                      <label for="fname">Message*</label>
+                                      <textarea name="msgbox" id="message" cols="30" rows="10"></textarea>
+                                </div>
+                                
+                                <input type="button" value="Send">
+                        </form>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                        <img src="Images/back_end.png" alt="">
-                        <h2>Back End Developer. </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, alias?</p>
-                </div>
-            </div>
-    </section>
-
-    <section id="skills" class="grid">
-            <div class="content-wrap"></div>
-            <ul>
-                    <li>HTML <img src="Images/HTML.png" alt="" srcset=""></li>
-            </ul>          
-    </section>
-
-    <section id="projects" class="grid">
-            <div class="content-wrap">
-                    <img src="Images/gutenburg.png" alt="Gutenberg Project">
-            </div>
-            <div class="content-wrap">
-                    <img src="Images/solent_pizzas.png" alt="Solent Pizzas">
-            </div>
-            <div class="content-wrap">
-                    <img src="Images/webco.png" alt="Webco">
-            </div>
-    </section>
-
-    <section id="blogs" class="grid">
-            <div class="content-wrap">
-                    <img src="Images/Modern Design.png" alt="">
-                    <h2>THE ORIGINS OF MODERN DESIGN </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, alias?</p>
-            </div>
-            <div class="content-wrap">
-                    <img src="Images/Websites.png" alt="">
-                    <h2>The background of websites and its guidelines </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, alias?</p>
-            </div>
-            <div class="content-wrap">
-                    <img src="Images/Global Village.png" alt="">
-                    <h2>The Global Village </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, alias?</p>
-            </div>
-    </section>
-
-    <section id="contact" class="grid">
-        <div class="box">
-            <h2 class="content-title">Social Media</h2>
-            <ul>
-                <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/alex-zietára-nicholls-19ba33172/"></a></i></li>
-                <li><i class="fab fa-github"></i><a href="https://github.com/alexnicholls1999"></a></li>
-                <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/alex_zietaranicholls/"></a></li>
-                <li><i class="fab fa-codepen"></i><a href="https://codepen.io/alex-william-ziet-ra-nicholls/#"></a></li>
-            </ul> 
-        </div>
-        <div class="box">
-                <h2 class="content-title">Message Me</h2>
-                <form action="">
-                    <label for="fname">Name* </label>
-                    <input type="text" name="name" id="name">
-
-                    <label for="lname">Email* </label>
-                    <input type="text" name="email" id="email">
-
-                    <label for="message">Message*</label>
-                    <textarea name="msgbox" id="message" cols="30" rows="10"></textarea>
-                </form>
-        </div>
-    </section>
-    <footer id="main-footer" class="grid">
-        <div>Alex Zietara Nicholls @ 2019</div>
-    </footer>
+        </section>
+        <footer id="main-footer" class="grid">
+                <div>Alex Zietara Nicholls @ 2019</div>
+        </footer>
 </body>
 </html>
