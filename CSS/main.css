@@ -39,9 +39,9 @@ p {
 nav {
   background: white;
   padding: 15px;
-  position: fixed;
   width: 100%;
   z-index: 1;
+  position: fixed;
 }
 
 nav #logo {
@@ -84,7 +84,8 @@ nav #menu {
 }
 
 #home .btn p {
-  margin-top: 10px;
+  margin: 0;
+  padding: 1%;
 }
 
 #about {
@@ -232,5 +233,51 @@ nav #menu {
   padding: 7%;
   background-color: #707070;
   color: white;
+}
+
+@media (min-width: 700px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: " a a a a " " b b b b " " c c c c " " d d d d " " e e e e " " f f f f " " g g g g " " h h h h " " i i i i ";
+  }
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.e {
+  grid-area: e;
+}
+
+.f {
+  grid-area: f;
+}
+
+.g {
+  grid-area: g;
+}
+
+.h {
+  grid-area: h;
+}
+
+.i {
+  grid-area: i;
 }
 /*# sourceMappingURL=main.css.map */
