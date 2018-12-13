@@ -3,281 +3,202 @@ html {
 }
 
 body {
-  margin: 0;
   font-family: Helvetica, Arial, sans-serif;
-  color: black;
-  font-size: 1.1em;
+}
+
+.wrapper {
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.row {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.page-title {
+  padding: 25px;
   text-align: center;
 }
 
-h1, h2, h3 {
-  margin: 0;
-  padding: 1em 0;
+.page-title:nth-child(1) {
+  padding: 120px;
 }
 
-h2 {
-  font-size: 30px;
-  font-weight: medium;
+.col-1 {
+  width: 6.25%;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+.col-2 {
+  width: 12.5%;
 }
 
-p {
-  margin: 0;
-  padding: 1em 0;
-  color: color;
+.col-3 {
+  width: 18.75%;
 }
 
-.btn {
-  color: color;
-  padding: 1em;
+.col-4 {
+  width: 25%;
 }
 
-nav {
+.col-5 {
+  width: 31.25%;
+}
+
+.col-6 {
+  width: 37.5%;
+}
+
+.col-7 {
+  width: 43.75%;
+}
+
+.col-8 {
+  width: 50%;
+}
+
+.col-8 {
+  width: 50%;
+}
+
+.col-9 {
+  width: 56.25%;
+}
+
+.col-10 {
+  width: 62.5%;
+}
+
+.col-11 {
+  width: 68.75%;
+}
+
+.col-12 {
+  width: 75%;
+}
+
+.col-13 {
+  width: 81.25%;
+}
+
+.col-14 {
+  width: 87.5%;
+}
+
+.col-15 {
+  width: 93.75%;
+}
+
+.col-16 {
+  width: 100%;
+}
+
+.offset-1 {
+  margin-left: 6.25%;
+}
+
+.offset-2 {
+  margin-left: 12.5%;
+}
+
+[class*='col-'] {
+  float: left;
+  padding-right: 25px;
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+.nav {
   background: white;
   padding: 15px;
   width: 100%;
+  top: 0;
   z-index: 1;
   position: fixed;
 }
 
-nav #logo {
+.nav #logo {
   position: relative;
-  margin-left: -250px;
+  float: left;
 }
 
-nav #menu {
-  position: absolute;
-  margin: -25px 100px;
+.nav #menu {
+  position: relative;
+  float: right;
+  padding-right: 25px;
 }
 
 #home {
+  padding-top: 25%;
+  text-align: center;
   height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 0px;
   background: url("../Images/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-#home .content-wrap, #home #about .content-wrap {
-  padding: 0 1.5em;
-}
-
-#home h1 {
-  margin-top: 260px;
-  color: white;
-  font-weight: lighter;
-}
-
-#home p {
-  margin-top: -35px;
   color: white;
 }
 
-#home .btn img {
-  margin-top: 250px;
-  margin-right: 11px;
+.content-wrap {
+  padding: 0 1em;
+  margin-top: 10%;
 }
 
-#home .btn p {
-  margin: 0;
-  padding: 1%;
+.scroll-btn {
+  padding: 0;
+  margin-top: 15%;
 }
 
-#about {
-  padding-top: 5em;
-  padding-bottom: 2em;
-}
-
-#about img {
+.about-image {
   border-radius: 50%;
   border: 5px solid grey;
   width: 50%;
-  height: 50%;
+  height: auto;
 }
 
-#attributes {
-  padding: 2em 1em 1em;
-}
-
-#attributes ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#attributes li {
-  margin-bottom: 3em;
-}
-
-#skills ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-#skills li {
-  padding: 0;
-  margin: 0;
-}
-
-#skills img {
-  width: 100%;
-}
-
-#skills h3 {
-  position: absolute;
-  margin-top: -20%;
-  margin-left: 10%;
-  color: white;
-  font-size: 25px;
-}
-
-#projects {
-  padding: 2em 1em 1em;
-}
-
-#blogs {
-  padding: 2em;
-}
-
-#blogs .card {
-  padding: 1em;
-}
-
-#blogs ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-#blogs li {
-  padding: 0;
-  margin: 0;
-}
-
-#blogs img {
-  width: 100%;
-}
-
-#contact {
-  background-color: #F7F7F7;
-}
-
-#contact .box {
-  padding: 10%;
-}
-
-#contact ul {
-  list-style: none;
-  padding: 1% 1%;
-}
-
-#contact ul li {
-  display: inline-block;
-  font-size: 11vw;
+.about-info {
   text-align: center;
-  padding: 15px;
 }
 
-#contact .box:nth-child(2) {
-  background-color: #dddddd;
+.card {
+  padding: 10%;
+  text-align: center;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.blog-card {
+  text-align: left;
   padding: 10%;
 }
 
-#contact form {
-  margin: -1em;
-  font-size: 15px;
+.blog-card img {
+  display: block;
   width: 100%;
+  height: auto;
 }
 
-#contact form .form-wrap {
-  padding: 1px;
-}
-
-#contact form label {
-  margin-right: 300px;
-  padding: 0;
-}
-
-#contact form input[type=text] {
-  width: 100%;
-  padding: 5px 20px;
-  margin: 8px 0;
-}
-
-#contact form textarea {
-  resize: none;
-  width: 100%;
-  margin-top: 1em;
-  padding: 5px 20px;
-}
-
-#contact form input[type=button] {
-  width: 55%;
-  padding: 10px;
-  margin-left: 40px;
-  margin-top: 15px;
-  background-color: #888888;
-  color: white;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  font-weight: lighter;
-}
-
-#main-footer {
-  padding: 7%;
-  background-color: #707070;
-  color: white;
-}
-
-@media (min-width: 700px) {
-  body {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: " a a a a " " b b b b " " c c c c " " d d d d " " e e e e " " f f f f " " g g g g " " h h h h " " i i i i ";
+@media (max-width: 700px) {
+  [class*='col-'] {
+    width: 100%;
   }
-}
-
-.a {
-  grid-area: a;
-}
-
-.b {
-  grid-area: b;
-}
-
-.c {
-  grid-area: c;
-}
-
-.d {
-  grid-area: d;
-}
-
-.e {
-  grid-area: e;
-}
-
-.f {
-  grid-area: f;
-}
-
-.g {
-  grid-area: g;
-}
-
-.h {
-  grid-area: h;
-}
-
-.i {
-  grid-area: i;
+  [class*='offset-'] {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

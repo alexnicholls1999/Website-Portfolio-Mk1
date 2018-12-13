@@ -1,272 +1,203 @@
 // Variables
 $color: black;
+$color-2: white;
 $font: Helvetica, Arial, sans-serif;
 
+$col: 6.25%;
+$offset: 6.25%;
+
+
+// Mixins 
+@mixin background(){
+    background: url("../Images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin font-family(){
+    font-family: $font;
+}
+
+// HTML
 html {
     scroll-behavior: smooth;
 }
 body{
-    margin: 0;
-    font-family: $font;
-    color: $color;
-    font-size: 1.1em;
+    @include font-family();
+}
+
+// CSS Variables
+.wrapper{
+    width: 100%;
+    display: table;
+    margin: 0 auto;
+    text-align: justify;
+}
+.row {
+    content: "";
+    clear: both;
+    display: block;
+}
+.page-title{
+    padding: 25px;
     text-align: center;
 }
-h1, h2, h3 {
-    margin:0;
-    padding: 1em 0;
+.page-title:nth-child(1){
+    padding: 120px;
 }
 
-h2 {
-    font-size: 30px;
-    font-weight: medium;
+// Columns 
+.col-1{
+    width: $col;
+}
+.col-2{
+    width: $col * 2;
+}
+.col-3{
+    width: $col * 3;
+}
+.col-4{
+    width: $col * 4;
+}
+.col-5{
+    width: $col * 5;
+}
+.col-6{
+    width: $col * 6;
+}
+.col-7{
+    width: $col * 7;
+}
+.col-8{
+    width: $col * 8;
+}
+.col-8{
+    width: $col * 8;
+}
+.col-9{
+    width: $col * 9;
+}
+.col-10{
+    width: $col * 10;
+}
+.col-11{
+    width: $col * 11;
+}
+.col-12{
+    width: $col * 12;
+}
+.col-13{
+    width: $col * 13;
+}
+.col-14{
+    width: $col * 14;
+}
+.col-15{
+    width: $col * 15;
+}
+.col-16{
+    width: $col * 16;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+// Offset 
+.offset-1 {
+    margin-left: $offset;
+}
+.offset-2 {
+    margin-left: $offset * 2;
 }
 
-p {
-    margin: 0;
-    padding: 1em 0;
-    color: color;
+// Grid
+[class*='col-']{
+    float: left;
+    padding-right: 25px;
+}
+[class*='col-']:last-of-type{
+    padding-right: 0;
 }
 
-.btn {
-    color: color;
-    padding: 1em;
-}
-nav {
+// Website
+// Navigation Bar
+.nav {
     background: white;
     padding: 15px;
     width: 100%;
+    top: 0;
     z-index: 1;
     position:fixed;
         #logo {
             position: relative;
-            margin-left: -250px;
+            float: left;
         }
         #menu {
-            position: absolute;
-            margin: -25px 100px;
+            position: relative;
+            float: right;
+            padding-right: 25px;
         }
 }
+
+// Home
 #home {
+    padding-top: 25%;
+    text-align: center;
     height: 100vh;
-    padding-top: 100px;
-    padding-bottom: 0px;
-    background: url("../Images/bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    .content-wrap, #about .content-wrap {
-        padding: 0 1.5em;
-    }
-    h1 {
-        margin-top: 260px;
-        color: white;
-        font-weight: lighter;
-    }
-
-    p {
-        margin-top: -35px;
-        color: white;
-    }
-
-    .btn img {
-        margin-top: 250px;
-        margin-right: 11px;
-
-    }
-    .btn p {
-        margin: 0;
-        padding: 1%;
-    }
+    @include background();
+    color: $color-2;
+}
+.content-wrap{
+    padding: 0 1em;
+    margin-top: 10%;
 }
 
-#about {
-    padding-top: 5em;
-    padding-bottom: 2em;
+.scroll-btn{
+    padding: 0;
+    margin-top: 15%;
+}
 
-    img {
+// About
+.about-image {
         border-radius: 50%;
         border: 5px solid grey;
         width: 50%;
-        height: 50%;
-    }
+        height: auto;
+}
+.about-info {
+    text-align: center;
 }
 
-#attributes {
-    padding: 2em 1em 1em;
+.card{
+    padding: 10%;
+    text-align: center;
 
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    li {
-        margin-bottom: 3em;
-    }
-}
-
-#skills {
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    li{
-        padding: 0;
-        margin: 0;
-    }
     img{
-        width: 100%;
-    }
-    h3 {
-        position: absolute;
-        margin-top: -20%;
-        margin-left: 10%;
-
-        color: white;
-        font-size: 25px;
+        width: 50px;
+        height: 50px;
     }
 }
-#projects {
-    padding: 2em 1em 1em;
-}
 
-#blogs {
-    padding: 2em;
-    
-    .card {
-        padding: 1em;
-    }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    li{
-        padding: 0;
-        margin: 0;
-    }
+.banner {
+    width: 100%;
+
     img{
         width: 100%;
     }
 }
 
-#contact {
-    background-color: #F7F7F7;
+.blog-card {
+    text-align: left;
+    padding: 10%; 
 
-    .box {
-        padding: 10%;
-    }
-
-    ul {
-        list-style: none;
-        padding: 1% 1%;
-        li {
-            display: inline-block;
-            font-size: 11vw;
-            text-align: center;
-            padding: 15px;
-        }
-    }
-    .box:nth-child(2){
-        background-color: #dddddd;
-        padding: 10%;
-    }
-
-    form{
-        margin: -1em;
-        font-size: 15px;
+    img{
+        display: block;
         width: 100%;
-
-        .form-wrap{
-            padding: 1px;
-        }
-
-        label {
-            margin-right: 300px;
-            padding: 0;
-        }
-        input[type=text] {
-            width: 100%;
-            padding: 5px 20px;
-            margin: 8px 0;
-        }
-
-        textarea{
-            resize: none;
-            width: 100%;
-            margin-top: 1em;
-            padding: 5px 20px;
-        }
-
-        input[type=button]{
-            width: 55%;
-            padding: 10px;
-            margin-left: 40px;
-            margin-top: 15px;
-            background-color: #888888;
-            color: white;
-
-            font-family: $font;
-            font-size: 20px;
-            font-weight: lighter; 
-        }
+        height: auto;
     }
 }
-
-#main-footer {
-    padding: 7%;
-    background-color: #707070;
-    color: white;
+@media (max-width: 700px){
+    [class*='col-']{
+        width: 100%;
+    }
+    [class*='offset-']{
+        margin-left:0;
+    }
 }
-
-@media (min-width: 700px){
-    body{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-            " a a a a "
-            " b b b b "
-            " c c c c "
-            " d d d d "
-            " e e e e "
-            " f f f f "
-            " g g g g "
-            " h h h h "
-            " i i i i "
-        }
-    }
-    .a {
-        grid-area: a;
-    }
-
-    .b {
-        grid-area: b;
-    }
-    .c {
-        grid-area: c;
-    }
-    .d {
-        grid-area: d;
-    }
-    .e {
-        grid-area: e;
-    }
-    .f {
-        grid-area: f;
-    }
-    .g {
-        grid-area: g;
-    }
-    .h {
-        grid-area: h;
-    }
-    .i {
-        grid-area: i;
-    }

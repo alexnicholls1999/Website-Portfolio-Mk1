@@ -9,167 +9,198 @@
         <title>Website Portfolio</title>
 </head>
 <body>
-        <!-- Navigation Menu -->
-          <nav class="a">
-                  <div id="logo"><img src="Images/logo.png" alt="logo"></div>
-                  <a href="#" id="menu"><img src="Images/hamburger-menu.png" alt="menu"></a>
-          </nav>
-        <!-- Home Page -->
-          <header id="home" class="b">
-                <div class="content-wrap">
-                        <h1>Welcome</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestias eligendi reiciendis eos ex ullam fugiat repellendus tempore ratione debitis! </p>
+
+        <div class="wrapper">
+                <div class="row">
+                        <div class="col-16 nav">
+                                <div id="logo"><img src="Images/logo.png" alt="logo"></div>
+                                <div id="menu"><a href="#"><img src="Images/hamburger-menu.png" alt="menu"></a></div>
+                        </div>
+                </div>
+                        <!-- End of Navigation Menu -->
+                
+                
+          
+                <div id="home" class="row header col-16">
+                        <div class="content-wrap">
+                                <h1>Welcome</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestias eligendi reiciendis eos ex ullam fugiat repellendus tempore ratione debitis! </p>
+                        </div>
+                        
+                        <div class="scroll-btn">
+                                <a href="#about" class="btn"><img src="Images/scroll.png" alt="scroll"></a>
+                                <p>Scroll</p>
+                        </div>
+                </div>
+
+        <!-- End of Home Page -->
+
+                <div id="about" class="row">
+                        <h2 class="page-title">About</h2>
+                </div>
+
+                <div class="row about-page">
+                        <div class="col-8 offset-2">
+                                <img class="about-image" src="Images/profile.JPG" alt="profile picture">
+                        </div> 
+        
+                        <aside class="col-6">
+                                <h3 class="about-info">Who Am I</h3>
+                                <p class="about-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, ex.</p>
+                        </aside>
+                </div>
+
+        <!-- End of About Page -->
+
+                <div id="attributes" class="row">
+                        <h2 class="page-title">Attributes</h2>
+                </div>
+
+                <div class="row">
+                <div class="col-4 offset-2">
+                        <div class="card">
+                                <img src="Images/UX_UI image.png" alt="UX_UI">
+                                <h2> UX and UI Design</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
+                        </div>
+                </div>
+                <div class="col-4" >
+                        <div class="card">
+                                <img src="Images/Front_End.png" alt="Front_End">
+                                <h2>Front End Developer</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
+                        </div>
+                </div>
+                <div class="col-4">
+                        <div class="card">
+                                <img src="Images/Back_End.png" alt="Front_End">
+                                <h2>Back End Developer</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
+                        </div>
+                       
+                </div>
+        </div>
+
+        <!-- End of Attributes Page -->
+
+
+                <div id="Skills" class="row">
+                        <h2 class="page-title">Skills</h2>
+                </div>
+
+                <div class="row">
+                        <div class="banner">
+                                <img src="Images/HTML.png" alt="UX and UI">
+                                <h3>HTML</h3>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="banner">
+                                <img src="Images/CSS.png" alt="UX and UI">
+                                <h3>CSS</h3>
+                        </div>       
+                </div>
+                <div class="row">
+                        <div class="banner">
+                                <img src="Images/JS.png" alt="UX and UI">
+                                <h3>JS</h3>
+                        </div>                
+                </div>
+                <div class="row">
+                        <div class="banner">
+                                <img src="Images/Python.png" alt="UX and UI">
+                                <h3>PYTHON</h3>
+                        </div>                
+                </div>
+                <div class="row">
+                        <div class="banner">
+                                <img src="Images/Git.png" alt="UX and UI">
+                                <h3>GIT</h3>
+                        </div>                               
+                </div>
+                <div class="row">
+                        <div class="banner">
+                                <img src="Images/React.png" alt="UX and UI">
+                                <h3>REACT</h3>
+                        </div>                 
+                </div>
+                <div class="row">
+                        <div class="banner">
+                                <img src="Images/Vue.png" alt="Vue">
+                                <h3>VUE</h3>
+                        </div>               
+                </div>
+                <div class="row">
+                        <div class="banner">
+                                <img src="Images/Sketch.png" alt="Sketch" >
+                                <h3>SKETCH</h3>
+                        </div>                
+                </div>
+                <div class="row">
+                        <div class="banner">
+                                <img src="Images/XD.png" alt="Sketch" >
+                                <h3>XD</h3>
+                        </div>               
+                </div>
+                <div class="row">
+                        <div class="banner">
+                                <img src="Images/Photoshop.png" alt="Sketch" >
+                                <h3>PHOTOSHOP</h3>
+                        </div>                
+                </div>
+
+                <!-- End of Skills Page -->
+
+                <div id="projects" class="row">
+                        <h2 class="page-title">Projects</h2>
+                </div>
+
+                <div class="row">
+                        <div class="col-4 offset-2">
+                                <img src="Images/gutenburg.png" alt="project-1">
+                        </div>
+                        <div class="col-4">
+                                <img src="Images/solent_pizzas.png" alt="project-2">
+                        </div>
+                        <div class="col-4">
+                                <img src="Images/webco.png" alt="project-3">
+                        </div>
+                </div>        
+                <!-- End of Projects Page -->
+
+
+                <div id="blogs" class="row">
+                <h2 class="page-title">Blogs</h2>
                 </div>
         
-                <a href="#about" class="btn"><img src="Images/scroll.png" alt="scroll"><p>Scroll</p></a>
+                <div class="row">
+                        <div class="col-4 offset-1">
+                                <div class="blog-card">
+                                        <img src="Images/Modern Design.png" alt="UX and UI">
+                                        <h2>THE ORIGINS OF MODERN DESIGN</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>                                        
+                                </div>
 
-        </header>
-
-        <!-- About Page -->
-        <section id="about" class="c">
-                <h2>About</h2>
-                <section id="profile">
-                        <img class="profile" src="Images/profile.JPG" alt="profile picture">
-                </section>    
-
-                <section id="info">
-                        <h3 class="wrap">Who Am I</h3>
-                        <p class="wrap">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, ex.</p>
-                </section>
-
-        </section>
-
-        <!-- Attributes Page -->
-        <section id="attributes" class="d">
-                <h2>Attributes</h2>
-                <ul>
-                        <li>
-                                <div class="card">
-                                        <img src="Images/UX_UI image.png" alt="UX and UI">
-                                        <h2>UX and UI Design</h2>
+                        </div>
+                        <div class="col-4">
+                                <div class="blog-card">
+                                   <img src="Images/Websites.png" alt="Front_End">
+                                   <h2>The background of websites and its guidelines</h2>
+                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>      
+                                </div>
+                        </div>
+                        <div class="col-4">
+                                <div class="blog-card">
+                                        <img src="Images/Global Village.png" alt="Front_End">
+                                        <h2>The Global Village</h2>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
                                 </div>
-                        </li>
-                        <li>
-                                <div class="card">
-                                        <img src="Images/Front_End.png" alt="Front_End">
-                                        <h2>Front End Developer</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
-                                </div>
-                        </li>
-                        <li>
-                                <div class="card">
-                                        <img src="Images/Back_End.png" alt="Front_End">
-                                        <h2>Back End Developer</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
-                                </div>
-                        </li>
-                </ul>
-        </section>
+                                
+                        </div>
 
-        <!-- Skills -->
-        <section id="skills" class="e">
-                <h2>Skills</h2>
-                <ul>
-                     <li>
-                          <div class="banner">
-                                  <img src="Images/HTML.png" alt="UX and UI">
-                                  <h3>HTML</h3>
-                          </div>
-                     </li>
-                     <li>
-                          <div class="banner">
-                                  <img src="Images/CSS.png" alt="UX and UI">
-                                  <h3>CSS</h3>
-                          </div>                                    
-                     </li>
-                     <li>
-                          <div class="banner">
-                                  <img src="Images/JS.png" alt="UX and UI">
-                                  <h3>JS</h3>
-                          </div>                                    
-                     </li>
-                     <li>
-                          <div class="banner">
-                                  <img src="Images/Python.png" alt="UX and UI">
-                                  <h3>PYTHON</h3>
-                          </div>                                    
-                     </li>
-                     <li>
-                          <div class="banner">
-                                  <img src="Images/Git.png" alt="UX and UI">
-                                  <h3>GIT</h3>
-                          </div>                                    
-                     </li>
-                     <li>
-                          <div class="banner">
-                                  <img src="Images/React.png" alt="UX and UI">
-                                  <h3>REACT</h3>
-                          </div>                                    
-                     </li>
-                     <li>
-                             <div class="banner">
-                                     <img src="Images/Vue.png" alt="Vue">
-                                     <h3>VUE</h3>
-                             </div>
-                     </li>
-                     <li>
-                             <div class="banner">
-                                     <img src="Images/Sketch.png" alt="Sketch" >
-                                     <h3>SKETCH</h3>
-                             </div>
-                     </li>
-                     <li>
-                             <div class="banner">
-                                     <img src="Images/XD.png" alt="Sketch" >
-                                     <h3>XD</h3>
-                             </div>
-                     </li>
-                     <li>
-                                <div class="banner">
-                                     <img src="Images/Photoshop.png" alt="Sketch" >
-                                     <h3>PHOTOSHOP</h3>
-                                </div>
-                     </li>                     
-                </ul>
-        </section>
-
-        <!-- Projects Page -->
-        <section id="Projects" class="f">
-                <h2>Projects</h2>
-                <img src="Images/gutenburg.png" alt="">
-                <img src="Images/solent_pizzas.png" alt="">
-                <img src="Images/webco.png" alt="">
-        </section>        
-
-        <!-- Blogs Page -->
-        <section id="blogs" class="g">
-                <h2>Blogs</h2>
-
-                <ul>
-                     <li>
-                             <div class="card">
-                                     <img src="Images/Modern Design.png" alt="UX and UI">
-                                     <h2>THE ORIGINS OF MODERN DESIGN</h2>
-                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
-                             </div>
-                     </li>
-                     <li>
-                             <div class="card">
-                                     <img src="Images/Websites.png" alt="Front_End">
-                                     <h2>The background of websites and its guidelines</h2>
-                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
-                             </div>
-                     </li>
-                     <li>
-                             <div class="card">
-                                     <img src="Images/Global Village.png" alt="Front_End">
-                                     <h2>The Global Village</h2>
-                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
-                             </div>
-                     </li>
-                </ul>
-        </section>
+                </div>
+        </div>
+        <!-- End of Blogs Page -->
         
         <!-- Contact Page -->
         <section id="contact" class="h">
@@ -208,5 +239,6 @@
         <footer id="main-footer" class="i">
                 <div>Alex Zietara Nicholls @ 2019</div>
         </footer>
+        </div>
 </body>
 </html>
