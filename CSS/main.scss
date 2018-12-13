@@ -1,4 +1,5 @@
 // Variables
+
 $color: black;
 $color-2: white;
 $font: Helvetica, Arial, sans-serif;
@@ -24,6 +25,7 @@ html {
 }
 body{
     @include font-family();
+
 }
 
 // CSS Variables
@@ -39,11 +41,12 @@ body{
     display: block;
 }
 .page-title{
-    padding: 25px;
+    padding: 5%;
     text-align: center;
 }
-.page-title:nth-child(1){
-    padding: 120px;
+.about-title{
+    padding: 10%;
+    text-align: center;
 }
 
 // Columns 
@@ -123,6 +126,7 @@ body{
     padding: 15px;
     width: 100%;
     top: 0;
+    margin-left: -10px;
     z-index: 1;
     position:fixed;
         #logo {
@@ -143,6 +147,7 @@ body{
     height: 100vh;
     @include background();
     color: $color-2;
+    margin-left: -10px;
 }
 .content-wrap{
     padding: 0 1em;
@@ -163,6 +168,7 @@ body{
 }
 .about-info {
     text-align: center;
+    margin-right: 120px;
 }
 
 .card{
@@ -181,6 +187,24 @@ body{
     img{
         width: 100%;
     }
+    h3{
+        position: absolute;
+        float: left;
+        padding: 5%;
+        font-size: 50px;
+        color: $color-2;
+        margin-top: -20%;
+    }
+}
+
+.pro-card{
+    padding: 10%;
+    
+    img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .blog-card {
@@ -193,11 +217,79 @@ body{
         height: auto;
     }
 }
+section{
+    display: block;
+    background-color: #F7F7F7;
+    height: 100%;
+    padding-bottom: 5%;
+    float: left;
+}
+section:nth-child(2){
+    background-color:#dddddd; 
+    float: right;
+    padding: 0%;
+}
+.box {
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    li {
+        text-align: center;
+        display: inline-block;
+        padding: 10px;
+        font-size: 60px;
+    }
+}
+form{
+    display: grid;
+    grid-template-columns: 20% 60%;
+    grid-template-rows: 20px 1fr;
+    grid-row-gap: 1em;
+    padding: 10px;
+
+    label{
+        grid-column: 1;
+        padding: 1px;
+    }
+
+    input[type=text]{
+        grid-column: 2;
+        background-color: #F7F7F7; 
+        border: #f7f7f7 solid 2px;
+    }
+
+    textarea {
+        background-color: #F7F7F7;
+        border: #F7F7F7 solid 2px;
+    }
+}
+
+
+footer{
+    text-align: center;
+    padding: 5%;
+    background-color: #707070;
+    color: $color-2;
+}
+
 @media (max-width: 700px){
     [class*='col-']{
         width: 100%;
     }
     [class*='offset-']{
         margin-left:0;
+    }
+    .about-image {
+        width: 100%;        
+    }
+    .banner {
+        h3{
+            font-size: 25px;
+        }
     }
 }

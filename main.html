@@ -36,7 +36,7 @@
         <!-- End of Home Page -->
 
                 <div id="about" class="row">
-                        <h2 class="page-title">About</h2>
+                        <h2 class="about-title">About</h2>
                 </div>
 
                 <div class="row about-page">
@@ -157,13 +157,19 @@
 
                 <div class="row">
                         <div class="col-4 offset-2">
-                                <img src="Images/gutenburg.png" alt="project-1">
+                                <div class="pro-card">
+                                        <img src="Images/gutenburg.png" alt="project-1">
+                                </div>   
                         </div>
                         <div class="col-4">
-                                <img src="Images/solent_pizzas.png" alt="project-2">
+                                <div class="pro-card">
+                                        <img src="Images/solent_pizzas.png" alt="project-1">
+                                </div>   
                         </div>
                         <div class="col-4">
-                                <img src="Images/webco.png" alt="project-3">
+                                <div class="pro-card">
+                                        <img src="Images/webco.png" alt="project-1">
+                                </div> 
                         </div>
                 </div>        
                 <!-- End of Projects Page -->
@@ -174,7 +180,7 @@
                 </div>
         
                 <div class="row">
-                        <div class="col-4 offset-1">
+                        <div class="col-4 offset-2">
                                 <div class="blog-card">
                                         <img src="Images/Modern Design.png" alt="UX and UI">
                                         <h2>THE ORIGINS OF MODERN DESIGN</h2>
@@ -199,46 +205,39 @@
                         </div>
 
                 </div>
-        </div>
-        <!-- End of Blogs Page -->
-        
-        <!-- Contact Page -->
-        <section id="contact" class="h">
-                <div class="box">
-                  <h2 class="content-title">Social Media</h2>
-                  <ul>
-                          <li><i class="fab fa-linkedin-in"></i><a href=""></a></li>
-                          <li><i class="fab fa-github"></i><a href=""></a></li>
-                          <li><i class="fab fa-instagram"><a href=""></a></i></li>
-                          <li><i class="fab fa-codepen"><a href=""></a></i></li>
-                  </ul>
+                <div class="row contact-page">
+                        <section class="col-7">
+                                <div class="box">
+                                        <h2 class="content-title">Social Media</h2>
+                                        <ul>
+                                                <li><i class="fab fa-linkedin-in"></i><a href=""></a></li>
+                                                <li><i class="fab fa-github"></i><a href=""></a></li>
+                                                <li><i class="fab fa-instagram"><a href=""></a></i></li>
+                                                <li><i class="fab fa-codepen"><a href=""></a></i></li>
+                                        </ul>
+                                </div>
+                        </section>    
+                        <section class="col-8">
+                                <div class="box">
+                                                <h2 class="content-title">Message Me</h2>
+                                                <form action="">
+                                                        <label for="name">Name*</label>
+                                                        <input type="text" name="name" id="name"> 
+
+                                                        
+                                                        <label for="email">Email*</label>
+                                                        <input type="text" name="email" id="email">
+                                                
+                                                        <label for="fname">Message*</label>
+                                                        <textarea name="msgbox" id="message" cols="30" rows="10"></textarea>
+                                                </form>
+                               </div>
+                        </section>
                 </div>
 
-                <div class="box">
-                        <h2 class="content-title">Message Me</h2>
-                        <form action="">
-                                <div class="form-wrap">
-                                     <label for="name">Name*</label>
-                                     <input type="text" name="name" id="name">
-                                </div>
-                                
-                                <div class="form-wrap">
-                                     <label for="email">Email*</label>
-                                     <input type="text" name="email" id="email">
-                                </div>
-
-                                <div class="form-wrap">
-                                      <label for="fname">Message*</label>
-                                      <textarea name="msgbox" id="message" cols="30" rows="10"></textarea>
-                                </div>
-                                
-                                <input type="button" value="Send">
-                        </form>
+                <footer id="main-footer" class="row">
+                        <div>Alex Zietara Nicholls @ 2019</div>
+                </footer>
                 </div>
-        </section>
-        <footer id="main-footer" class="i">
-                <div>Alex Zietara Nicholls @ 2019</div>
-        </footer>
-        </div>
 </body>
 </html>

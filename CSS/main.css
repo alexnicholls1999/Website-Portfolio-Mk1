@@ -20,12 +20,13 @@ body {
 }
 
 .page-title {
-  padding: 25px;
+  padding: 5%;
   text-align: center;
 }
 
-.page-title:nth-child(1) {
-  padding: 120px;
+.about-title {
+  padding: 10%;
+  text-align: center;
 }
 
 .col-1 {
@@ -118,6 +119,7 @@ body {
   padding: 15px;
   width: 100%;
   top: 0;
+  margin-left: -10px;
   z-index: 1;
   position: fixed;
 }
@@ -141,6 +143,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  margin-left: -10px;
 }
 
 .content-wrap {
@@ -162,6 +165,7 @@ body {
 
 .about-info {
   text-align: center;
+  margin-right: 120px;
 }
 
 .card {
@@ -182,6 +186,25 @@ body {
   width: 100%;
 }
 
+.banner h3 {
+  position: absolute;
+  float: left;
+  padding: 5%;
+  font-size: 50px;
+  color: white;
+  margin-top: -20%;
+}
+
+.pro-card {
+  padding: 10%;
+}
+
+.pro-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .blog-card {
   text-align: left;
   padding: 10%;
@@ -193,12 +216,87 @@ body {
   height: auto;
 }
 
+section {
+  display: block;
+  background-color: #F7F7F7;
+  height: 100%;
+  padding-bottom: 5%;
+  float: left;
+}
+
+section:nth-child(2) {
+  background-color: #dddddd;
+  float: right;
+  padding: 0%;
+}
+
+.box {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+ul li {
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  font-size: 60px;
+}
+
+form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60%;
+      grid-template-columns: 20% 60%;
+  -ms-grid-rows: 20px 1fr;
+      grid-template-rows: 20px 1fr;
+  grid-row-gap: 1em;
+  padding: 10px;
+}
+
+form label {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  padding: 1px;
+}
+
+form input[type=text] {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background-color: #F7F7F7;
+  border: #f7f7f7 solid 2px;
+}
+
+form textarea {
+  background-color: #F7F7F7;
+  border: #F7F7F7 solid 2px;
+}
+
+footer {
+  text-align: center;
+  padding: 5%;
+  background-color: #707070;
+  color: white;
+}
+
 @media (max-width: 700px) {
   [class*='col-'] {
     width: 100%;
   }
   [class*='offset-'] {
     margin-left: 0;
+  }
+  .about-image {
+    width: 100%;
+  }
+  .banner h3 {
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=main.css.map */
