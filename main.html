@@ -9,17 +9,39 @@
         <title>Website Portfolio</title>
 </head>
 <body>
-
-        <div class="wrapper">
+        <div class="wrapper">  
+             <script src="JS/main.js"></script>
+             <!--Script-->
                 <div class="row">
                         <div class="col-16 nav">
                                 <div id="logo"><img src="Images/logo.png" alt="logo"></div>
-                                <div id="menu"><a href="#"><img src="Images/hamburger-menu.png" alt="menu"></a></div>
+                                
+
+                                <div class="hamburger" onclick="toggleMenu(this)">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                </div>
+                                <!-- End of topbar -->
+                                <div class="overlay">
+                                        <div id="menu" class="menu">
+                                                <ul>
+                                                        <li><a href="#home">Home</a></li>
+                                                        <li><a href="#about">About</a></li>
+                                                        <li><a href="#attributes">Attributes</a></li>
+                                                        <li><a href="#skills">Skills</a></li>
+                                                        <li><a href="#projects">Projects</a></li>
+                                                        <li><a href="#blogs">Blogs</a></li>
+                                                        <li><a href="#contact">Contact</a></li>                                                      
+                                                </ul>
+                                        </div>                                        
+                                </div>
+                                <!-- End of fullscreen overlay menu -->
+
                         </div>
                 </div>
-                        <!-- End of Navigation Menu -->
                 
-                
+                <!-- End of Navigation Menu -->
           
                 <div id="home" class="row header col-16">
                         <div class="content-wrap">
@@ -28,18 +50,17 @@
                         </div>
                         
                         <div class="scroll-btn">
-                                <a href="#about" class="btn"><img src="Images/scroll.png" alt="scroll"></a>
-                                <p>Scroll</p>
+                                <a href="#about"><img src="Images/scroll.png" alt="scroll"><p>Scroll</p></a>
                         </div>
                 </div>
 
-        <!-- End of Home Page -->
+                <!-- End of Home Page -->
 
                 <div id="about" class="row">
                         <h2 class="about-title">About</h2>
                 </div>
 
-                <div class="row about-page">
+                <div id="about-page" class="row about-page">
                         <div class="col-8 offset-2">
                                 <img class="about-image" src="Images/profile.JPG" alt="profile picture">
                         </div> 
@@ -50,7 +71,7 @@
                         </aside>
                 </div>
 
-        <!-- End of About Page -->
+                <!-- End of About Page -->
 
                 <div id="attributes" class="row">
                         <h2 class="page-title">Attributes</h2>
@@ -59,10 +80,11 @@
                 <div class="row">
                 <div class="col-4 offset-2">
                         <div class="card">
-                                <img src="Images/UX_UI image.png" alt="UX_UI">
+                                <img src="Images/UX_UI_image.png" alt="UX_UI">
                                 <h2> UX and UI Design</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
                         </div>
+                        <!-- End of Card -->
                 </div>
                 <div class="col-4" >
                         <div class="card">
@@ -70,18 +92,20 @@
                                 <h2>Front End Developer</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
                         </div>
+                        <!-- End of Card -->
                 </div>
                 <div class="col-4">
                         <div class="card">
-                                <img src="Images/Back_End.png" alt="Front_End">
+                                <img src="Images/Back_End.png" alt="Back_End">
                                 <h2>Back End Developer</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
                         </div>
+                        <!-- End of Card -->
                        
                 </div>
         </div>
 
-        <!-- End of Attributes Page -->
+                <!-- End of Attributes Page -->
 
 
                 <div id="Skills" class="row">
@@ -93,60 +117,70 @@
                                 <img src="Images/HTML.png" alt="UX and UI">
                                 <h3>HTML</h3>
                         </div>
+                        <!-- End of banner -->
                 </div>
                 <div class="row">
                         <div class="banner">
                                 <img src="Images/CSS.png" alt="UX and UI">
                                 <h3>CSS</h3>
-                        </div>       
+                        </div>      
+                        <!-- End of banner --> 
                 </div>
                 <div class="row">
                         <div class="banner">
                                 <img src="Images/JS.png" alt="UX and UI">
                                 <h3>JS</h3>
-                        </div>                
+                        </div>      
+                        <!-- End of banner -->          
                 </div>
                 <div class="row">
                         <div class="banner">
                                 <img src="Images/Python.png" alt="UX and UI">
                                 <h3>PYTHON</h3>
-                        </div>                
+                        </div>           
+                        <!-- End of banner -->     
                 </div>
                 <div class="row">
                         <div class="banner">
                                 <img src="Images/Git.png" alt="UX and UI">
                                 <h3>GIT</h3>
-                        </div>                               
+                        </div>  
+                        <!-- End of banner -->                             
                 </div>
                 <div class="row">
                         <div class="banner">
                                 <img src="Images/React.png" alt="UX and UI">
                                 <h3>REACT</h3>
-                        </div>                 
+                        </div>    
+                        <!-- End of banner -->             
                 </div>
                 <div class="row">
                         <div class="banner">
                                 <img src="Images/Vue.png" alt="Vue">
                                 <h3>VUE</h3>
-                        </div>               
+                        </div>     
+                        <!-- End of banner -->          
                 </div>
                 <div class="row">
                         <div class="banner">
                                 <img src="Images/Sketch.png" alt="Sketch" >
                                 <h3>SKETCH</h3>
-                        </div>                
+                        </div>        
+                        <!-- End of banner -->        
                 </div>
                 <div class="row">
                         <div class="banner">
                                 <img src="Images/XD.png" alt="Sketch" >
                                 <h3>XD</h3>
-                        </div>               
+                        </div>            
+                        <!-- End of banner -->   
                 </div>
                 <div class="row">
                         <div class="banner">
                                 <img src="Images/Photoshop.png" alt="Sketch" >
                                 <h3>PHOTOSHOP</h3>
-                        </div>                
+                        </div>   
+                        <!-- End of banner -->
                 </div>
 
                 <!-- End of Skills Page -->
@@ -159,33 +193,37 @@
                         <div class="col-4 offset-2">
                                 <div class="pro-card">
                                         <img src="Images/gutenburg.png" alt="project-1">
-                                </div>   
+                                </div> 
+                                <!-- End of card -->  
                         </div>
                         <div class="col-4">
                                 <div class="pro-card">
                                         <img src="Images/solent_pizzas.png" alt="project-1">
-                                </div>   
+                                </div> 
+                                <!-- End of card -->
                         </div>
                         <div class="col-4">
                                 <div class="pro-card">
                                         <img src="Images/webco.png" alt="project-1">
                                 </div> 
+                                <!-- End of card -->
                         </div>
                 </div>        
                 <!-- End of Projects Page -->
 
 
                 <div id="blogs" class="row">
-                <h2 class="page-title">Blogs</h2>
+                        <h2 class="page-title">Blogs</h2>
                 </div>
         
                 <div class="row">
                         <div class="col-4 offset-2">
                                 <div class="blog-card">
-                                        <img src="Images/Modern Design.png" alt="UX and UI">
+                                        <img src="Images/Modern_Design.png" alt="UX and UI">
                                         <h2>THE ORIGINS OF MODERN DESIGN</h2>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>                                        
                                 </div>
+                                <!-- End of card -->
 
                         </div>
                         <div class="col-4">
@@ -194,50 +232,62 @@
                                    <h2>The background of websites and its guidelines</h2>
                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>      
                                 </div>
+                                <!-- End of card -->
                         </div>
                         <div class="col-4">
                                 <div class="blog-card">
-                                        <img src="Images/Global Village.png" alt="Front_End">
+                                        <img src="Images/Global_Village.png" alt="Front_End">
                                         <h2>The Global Village</h2>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus?</p>
                                 </div>
-                                
+                                <!-- End of card -->
+                        
                         </div>
-
                 </div>
+
+                <!-- End of Blogs Page -->
+
                 <div class="row contact-page">
-                        <section class="col-7">
+                        <section class="col-8">
                                 <div class="box">
-                                        <h2 class="content-title">Social Media</h2>
-                                        <ul>
-                                                <li><i class="fab fa-linkedin-in"></i><a href=""></a></li>
-                                                <li><i class="fab fa-github"></i><a href=""></a></li>
-                                                <li><i class="fab fa-instagram"><a href=""></a></i></li>
-                                                <li><i class="fab fa-codepen"><a href=""></a></i></li>
+                                        <h2 id="contact" class="content-title">Social Media</h2>
+                                        <ul class="social-media">
+                                                <li><i class="fab fa-linkedin-in"></i></li>
+                                                <li><i class="fab fa-github"></i></li>
+                                                <li><i class="fab fa-instagram"></i></li>
+                                                <li><i class="fab fa-codepen"></i></li>
                                         </ul>
+                                        <!-- End of social media -->
                                 </div>
+                                <!-- End of Box 1 -->
                         </section>    
                         <section class="col-8">
                                 <div class="box">
                                                 <h2 class="content-title">Message Me</h2>
-                                                <form action="">
+                                                <form id="cform">
                                                         <label for="name">Name*</label>
                                                         <input type="text" name="name" id="name"> 
-
-                                                        
+                
                                                         <label for="email">Email*</label>
                                                         <input type="text" name="email" id="email">
                                                 
-                                                        <label for="fname">Message*</label>
+                                                        <label for="message">Message*</label>
                                                         <textarea name="msgbox" id="message" cols="30" rows="10"></textarea>
+                                                        
+                                                        <input type="button" value="Send">
                                                 </form>
+                                                <!-- End of form -->
                                </div>
+                               <!-- End of Box 2 -->
                         </section>
                 </div>
+                <!-- End of contact page -->
 
                 <footer id="main-footer" class="row">
                         <div>Alex Zietara Nicholls @ 2019</div>
                 </footer>
-                </div>
+                <!-- End of Footer -->
+        </div>
+        <!-- End of Wrapper -->
 </body>
 </html>
